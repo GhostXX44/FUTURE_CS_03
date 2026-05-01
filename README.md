@@ -48,18 +48,6 @@ https://jsonplaceholder.typicode.com/comments?postId=1
 - Real-time API response analysis
 - Structured documentation of results
 
----
-
-## Screenshots
-
-### Users API Response
-![Users API](screenshots/users_endpoint.png)
-
-### Comments API Response
-![Comments API](screenshots/comments_exposure.png)
-
-### Filtered Comments Response
-![Filtered Comments](screenshots/comments_filtered.png)
 
 ---
 
