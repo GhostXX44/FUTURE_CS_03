@@ -1,84 +1,73 @@
-# 🔐 API Security Risk Assessment (SaaS-Oriented Project)
+# FUTURE_CS_03 - API Testing & Validation Project
 
-## 📌 Overview
-This project demonstrates a read-only API security assessment performed on a public REST API.
+## Project Overview
+This project demonstrates hands-on API testing and validation using Postman with the JSONPlaceholder REST API.  
+It focuses on understanding how REST APIs work, sending HTTP requests, and analyzing responses in real-world scenarios.
 
-The goal was to identify common API security risks such as:
-- Missing authentication
-- Excessive data exposure
-- Lack of access control
-- Potential abuse scenarios
+The project simulates basic backend testing workflows used in QA and cybersecurity environments.
 
 ---
 
-## 🎯 Target API
-- https://jsonplaceholder.typicode.com
+## Objectives
+- Understand REST API structure and endpoints
+- Perform GET requests using Postman
+- Analyze JSON responses
+- Test filtered and specific data queries
+- Document API results with screenshots
 
 ---
 
-## 🛠️ Tools Used
-- Postman
-- Browser DevTools
-- Kali Linux
-- GitHub
+## Tools & Technologies Used
+- Postman (API Testing Tool)
+- Git & GitHub (Version Control)
+- JSONPlaceholder API (Fake REST API for testing)
+- Kali Linux Environment
 
 ---
 
-## 🔍 Key Findings
+## API Endpoints Tested
 
-### Missing Authentication (High)
-API endpoints are accessible without login.
+### 1. Users API
+Fetch all user data:
+https://jsonplaceholder.typicode.com/users
 
-### Excessive Data Exposure (Medium)
-User data such as email, phone, and address is exposed.
+### 2. Comments API
+Retrieve all comments:
+https://jsonplaceholder.typicode.com/comments
 
-### Email Exposure (Medium)
-Comments API reveals email addresses.
-
-### ID-Based Access (Medium)
-User data accessible via `/users/1`.
-
-### No Rate Limiting (Low)
-No visible request limits.
+### 3. Filtered Comments API
+Fetch comments for a specific post:
+https://jsonplaceholder.typicode.com/comments?postId=1
 
 ---
 
-## 📸 Evidence
-
-- users_endpoint.png  
-- comments_exposure.png  
-- user_id_access.png  
-- postman_request.png  
-
----
-
-## 📊 Impact
-
-- Unauthorized data access  
-- Privacy risks  
-- Data scraping  
-- Phishing possibilities  
+## Key Features Demonstrated
+- API request execution (GET method)
+- Response validation (JSON format)
+- Query parameter testing
+- Real-time API response analysis
+- Structured documentation of results
 
 ---
 
-## 🛡️ Recommendations
+## Screenshots
 
-- Add authentication  
-- Limit sensitive data  
-- Implement access control  
-- Apply rate limiting  
+### Users API Response
+![Users API](screenshots/users_endpoint.png)
 
----
+### Comments API Response
+![Comments API](screenshots/comments_exposure.png)
 
-## 📄 Report
-See: **report.pdf**
-
----
-
-## ⚠️ Disclaimer
-This project uses a public test API. No real systems were harmed.
+### Filtered Comments Response
+![Filtered Comments](screenshots/comments_filtered.png)
 
 ---
 
-## 👤 Author
-Tushar Kunwar
+## Learning Outcome
+Through this project, I gained practical experience in API testing workflows, understanding how client-server communication works, and how to validate data returned from REST APIs.
+
+---
+
+## Author
+**Tushar Kunwar**  
+Cybersecurity & API Testing Enthusiast  
